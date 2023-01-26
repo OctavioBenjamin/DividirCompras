@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Compras</title>
+</head>
+<body>
+    
+    <header>
+        <h2 id="TituloMain">Software de Compras</h2>
+        <nav>
+            <a href="" class="nav-link">Inicio</a>
+            <a href="" class="nav-link">Ayuda</a>
+            <a href="" class="nav-link">Sobre Mi</a>
+        </nav>
+    
+    </header>
+    <div class="flex-cont">
+        <div id="div_usuarios">
+            <h2>Usuarios</h2>
+            <input type="text" id="nombreUsuario">
+            <button id="botonAgregarUsuario" onclick="add_usuario()">Agregar</button>
+            <!-- <button id="botonMostrarUsuarios" onclick="mostrarUsuarios()">Mostrar</button> -->
+            <div id="listaUsuarios">
+                <h3>Usuarios Agregados</h3>
+                <div id="usuariosAgregados"></div>
+                <button id="botonLimpiarUsuarios">Clear</button>
+            </div>
+        </div>
+
+        <div id="div_productos">
+            <h2>Agregar Producto</h2>
+                <div id="inputsProductos">
+                    <input id="nombreProducto" type="text" placeholder="Producto">
+                    <input id="cantidadProducto" type="number" step="0.01" placeholder="Cantidad">
+                    <input id="precioProducto" type="number" step="0.01" placeholder="Precio">
+                    <div id="checkCompradores"></div>
+                    
+                </div>
+            <button id="botonAgregarProducto" onclick="agregarProductos()">Agregar producto</button>    
+            <div id="listaProductos">
+                <h3>Productos Agregados</h3>
+                <div id="productosAgregados"></div>
+                <table id="tabla_Productos" border="1">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Compradores</th>
+                    </tr>
+                </table>
+                <button onclick="calcularTotal()">Calcular</button>
+            </div>
+
+            <div id="compraTotal"></div>
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

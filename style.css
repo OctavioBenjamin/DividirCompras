@@ -1,0 +1,156 @@
+/* 
+Paleta
+Negro #040F0F
+Verde #248232 #175a21
+Rojo #DB162F #a61125
+Gris #C2C2C2
+Celeste #2E8BB2
+https://coolors.co/040f0f-248232-db162f-c2c2c2-2e8bb2
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: #C2C2C2;
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#div_usuarios {
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 500px;
+    background-color: white;
+}
+
+#div_productos{
+    font-display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    /* width: 700px; */
+}
+
+#checkCompradores{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    background-color: #248232;
+    padding-left: 20px;
+}
+
+
+div h2{
+    align-items: center;
+}
+
+button {
+    position: relative;
+    margin: 5px;
+    padding: 0px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #248232;
+}
+
+button:hover {
+    background-color: #175a21;
+    font-weight: 500
+}
+
+#botonLimpiarUsuarios{
+    margin: 0px;
+    background-color: #DB162F;
+}
+
+#botonLimpiarUsuarios:hover{
+    background-color: #a61125;
+    font-weight: 500
+}
+
+#usuariosAgregados p {
+    padding: 10px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+input {
+    margin-right: 5px;
+    padding: 0px;
+    height: 30px;
+}
+
+table {
+    border-radius: 7px;
+    border-collapse: collapse;
+}
+th {
+    width: 20%;
+}
+
+header{
+    display: flex;
+    background-color: #040f0f;
+    color: #C2C2C2;
+    justify-content: space-between;
+    min-height: 50px;
+    padding: 10px;
+    align-items: center; 
+}
+
+a{
+    text-decoration: none;
+    color: #C2C2C2;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 15px;
+}
+
+nav a:hover{
+    color: white;
+    background-color: #248232;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#compraTotal {
+    background-color: white;
+    border-radius: 7px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
